@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Input & Button */
+#text-area {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #2a2a2a;
+    color: #fff;
+}
+
+#add-todo {
+    padding: 10px 15px;
+    border: none;
+    background: #00c853;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-todo:hover {
+    background: #00a145;
+}
+
+/* Todo List */
+.todo-container {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.todo-container li {
+    background: #252525;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+}
+
+.todo-container li:hover {
+    transform: scale(1.02);
+    background: #2d2d2d;
+}
+
+.todo-container li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Checkbox Styling */
+.checkbox {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #00c853;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-grow: 1;
+}
